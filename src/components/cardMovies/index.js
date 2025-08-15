@@ -3,13 +3,13 @@ import { View, Image, Text, TouchableOpacity } from "react-native-web";
 import styles from './style.js'
 import { useNavigation } from "@react-navigation/native";
 
-export default function CardMovies({titulo, img, nota}){
+export default function CardMovies({titulo, img, nota, desc}){
 
     const navigation = useNavigation()
 
     return(
 
-        <TouchableOpacity style={styles.containerFilmes} onPress = {() => navigation.navigate('Detalhes',{titulo, nota, img})} >
+        <TouchableOpacity style={styles.containerFilmes} onPress = {() => navigation.navigate('Detalhes',{titulo, nota, img, desc})} >
 
             <Image style={styles.images} source={{uri : img}}/>
             <Text style={styles.titulo}>{titulo}</Text>

@@ -25,7 +25,7 @@ export default function App(){
 
           renderItem= {({item}) => (
             
-             <CardMovies titulo = {item.nome}  nota = {item.nota}  img = {item.img}></CardMovies>
+             <CardMovies titulo = {item.nome}  nota = {item.nota}  img = {item.img} desc={item.desc}></CardMovies>
           
                 
           
