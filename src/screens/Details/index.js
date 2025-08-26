@@ -16,18 +16,20 @@ export default function Detalhes (){
             <Text style = {styles.titulo}>{route.params.titulo}</Text>
             <Text style = {styles.nota}>{route.params.nota}</Text>
              <View style={{alignItems:'center'}}>
-                <Stars
-                    default={route.params.nota}
-                    count={5}
-                    half={true}
-                    starSize={250}
-                    disabled = {true} 
-                    fullStar={<Icon name={'star'} style={[styles.myStarStyle]}/>}
-                    emptyStar={<Icon name={'star-outline'} style={[styles.myStarStyle, styles.myEmptyStarStyle]}/>}
-                    halfStar={<Icon name={'star-half'} style={[styles.myStarStyle]}/>}
-                />
+            <Stars
+                default={route.params.nota}
+                count={5}
+                half={true}
+                starSize={250}
+                disabled = {true} 
+                fullStar={<Icon name={'star'} style={[styles.myStarStyle]}/>}
+                emptyStar={<Icon name={'star-outline'} style={[styles.myStarStyle, styles.myEmptyStarStyle]}/>}
+                halfStar={<Icon name={'star-half'} style={[styles.myStarStyle]}/>}
+            />
 
             <Text style={styles.descricao}>{route.params.desc}</Text>
+
+            
         </View>   
             
             
@@ -44,10 +46,8 @@ const styles = StyleSheet.create({
         textAlign: "auto"
     },
     img: {
-         width: 250,
+    width: 250,
     height: 400,
-    borderWidth: 2,
-    borderColor: 'white',
     borderRadius: 10,
     marginTop: 20,
     },

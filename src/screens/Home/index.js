@@ -5,10 +5,25 @@ import dados from "../../components/data/data.js";
 import Header from "../../components/header";
 import Search from "../../components/searchbar";
 import CardMovies from "../../components/cardMovies";
+import { useState, useEffect } from "react";
 
 
 
 export default function App(){
+
+  const [filmes, setFilmes] = useState(['']);
+
+  useEffect(()=>{
+
+    async function buscarFilmes(){
+      
+    }
+
+
+  },[])
+
+
+
   return (
     <View style={style.container}>
       <Header></Header>
