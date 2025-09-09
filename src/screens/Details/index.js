@@ -12,13 +12,13 @@ export default function Detalhes (){
     return(
         <View style={styles.body}>
 
-            <Image style = {styles.img} source={{uri : route.params.img}}/>
+            <Image style = {styles.img} source={{uri : route.params}}/>
             <Text style = {styles.titulo}>{route.params.titulo}</Text>
             <Text style = {styles.nota}>{route.params.nota}</Text>
              <View style={{alignItems:'center'}}>
             <Stars
                 default={route.params.nota}
-                count={5}
+                count={10}
                 half={true}
                 starSize={250}
                 disabled = {true} 
